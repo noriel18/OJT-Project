@@ -27,3 +27,16 @@ Route::post('/student_delete', 'studentcontroller@destroy')->name('student.destr
 Route::get('/delete', 'studentcontroller@delete')->name('student.delete');
 
 Route::get('/view/{id}', 'studentcontroller@view')->name('student.view');
+Route::get('/view2', 'studentcontroller@view2')->name('student.view2');
+
+Route::post('/destroyer', 'studentcontroller@destroyer')->name('student.destroyer');
+
+Route::get('/search', 'studentcontroller@search');
+
+Route::get('/studentinfo', 'studentcontroller@studentinfo')->name('student.studentinfo');
+
+Route::get('/view3', 'studentcontroller@view3')->name('student.view3');
+
+Route::get('/archive', 'studentcontroller@archive')->name('student.archive');
+
+

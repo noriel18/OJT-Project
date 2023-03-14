@@ -3036,8 +3036,18 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #000;
-  background-color: #bd5d38;
-  border-color: #bd5d38;
+  background-color: #24EE18;
+  border-color: #24EE18;
+}
+.btn-primarys {
+  color: #000;
+  background-color: #53EC50;
+  border-color: #53EC50;
+}
+.btn-successs  {
+  color: #000;
+  background-color: #e04040;
+  border-color: #e04040;
 }
 .btn-primary:hover {
   color: #000;

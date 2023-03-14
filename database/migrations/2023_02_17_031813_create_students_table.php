@@ -18,6 +18,8 @@ class CreateStudentsTable extends Migration
             $table->string('studentno');
             $table->string('name');
             $table->string('service');
+            $table->string('degree');
+            $table->softDeletes();
             $table->rememberToken();
             $table->timestamps();
         });

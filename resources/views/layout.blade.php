@@ -8,6 +8,15 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>Cashier System</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+
+        <!-- //fontawesome -->
+        <link rel="icon" type="image/x-icon" href="assets/fontawesome/css/fontawesome.css" />
+        <link rel="icon" type="image/x-icon" href="assets/fontawesome/css/solid.css" />
+
+        
+
+
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -17,7 +26,7 @@
         <link href="{{ asset('assets/css/styles.css') }}" rel="stylesheet" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
         <style>
     .parsley-errors-list li{
         color:red;
@@ -38,7 +47,10 @@
                     </div>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('student.index')}}">User Management</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('student.create')}}">Register Students</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="">View</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('student.archive')}}">Archive infos</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('student.view2')}}">Cashier 1</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('student.view3')}}">Cashier 2</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="{{route('student.studentinfo')}}">Studentinfo</a></li>
                 </ul>
             </div>
         </nav>

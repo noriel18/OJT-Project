@@ -3,16 +3,16 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
-
+use Illuminate\Database\Eloquent\softDeletes;
 class Students extends Model
 {
-
-
-    protected $fillable =[
-        'studentno','name','service',
-    ]; 
+    use softDeletes;
+    protected $dates =['delete_at'];
 
     protected $table = 'students';
 
+    protected $fillable =[
+        'studentno','name','service','degree',
+    ]; 
 
 }
